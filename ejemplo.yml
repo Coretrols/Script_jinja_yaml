@@ -1,0 +1,25 @@
+
+# diccionario:
+#     booleano: [verdadero, falso]
+#     tipos_De_Datos: [String, int, double, chart]
+
+# nombres:
+#    Nombre_Apellido: [x,y]
+
+diccionario:
+  elemento1: 'TituloJinja'
+  elemento2: "y"
+  elemento3: "z"
+  elemento4: 
+    diccionario2:
+        primer_elemento: 'Felicidades Accediste":)"'
+        segundo_elemento: 2
+        tercer_elemento: 3
+  elemento5: [1,2,3,4,5]
+  booleano: [true, false]
+
+CAPA1:
+  elemento1: '192.168.1.1'
+  elemento2: "y"
+  elemento3: "z"
+  booleano: [verdadero, falso]

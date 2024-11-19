@@ -1,0 +1,29 @@
+Esto es una prueba con Jinja
+
+{# Puedo acceder por medio de: diccionario.elemento1 o como en python diccionario['elemento2']#}
+Accediendo al elemento {{diccionario.elemento1}}
+Accediendo al elemento {{diccionario['elemento2']}}
+Accediendo al elemento {{diccionario['elemento3']}}
+Accediendo al elemento {{diccionario['booleano']}}
+Accediendo al elemento {{diccionario['booleano'][1]-}}
+
+{#Practicando con los operadores que ofrece Jinja#}
+
+{#Practicando con si-#}
+{% if diccionario.booleano.0 -%}
+    Se accedio a una lista y el valor booleano fue correcto
+{% endif  -%}
+{% if not diccionario.booleano.1 -%}
+    Se accedio a una lista y el valor booleano fue falso
+{% endif  -%}
+
+{#Practicando con los operadores que ofrece Jinja-#}
+{#Practicando con un ciclo-#}
+{% for elemento in diccionario.elemento5 -%}
+    {#Con el caracter especial - puedo eliminar un espacio#}
+    Se accedio por medio de un ciclo for al elemento: {{elemento-}}
+{%endfor%}
+
+
+{#Verificando la identación de Jinja-#}
+Se accede al diccionario2 el valor del primer elemento es: {{ diccionario['elemento4']['diccionario2']['primer_elemento'] }}
